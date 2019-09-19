@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#8A99A6">
+  <title>Anthony Reynolds - example post 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fira+Code:300|Abel|Aldrich&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../styles/style.css">
+  <script src="https://kit.fontawesome.com/16076497a6.js"></script>
+</head>
+<body>
+  <header id="site-header">
+  <a href="../" id="site-heading">ANTHONY REYNOLDS</a>
+</header>
+
+<nav class="constrain-lg topnav">
+  <div class="nav-left">
+    <a href="../"><i class="fas fa-home"></i> Home</a>
+    <a href="../posts.html"><i class="fas fa-file-alt"></i> Posts</a>
+    <a href="../portfolio.html"><i class="fas fa-address-card"></i> Portfolio</a>
+    <a href="../about.html"><i class="fas fa-info-circle"></i> About</a>
+  </div>
+  <div class="nav-right hide-sm">
+    <a href="#"><i class="fas fa-code"></i> Source Code</a>
+  </div>
+</nav>
+  <main>
+    <section id="post-title-area" class="constrain-lg">
+  <h1>example post 2</h1>
+  <div class="info">
+    <span><i class="far fa-clock"></i> September 17, 2019</span>
+    <div>
+      
+        <i class="fas fa-tags"> </i> <a href="../tags/testing.html">testing</a>, <a href="../tags/nix.html">nix</a>
+      
+    </div> 
+  </div>
+</section>
+
+<section id="post-main" class="constrain-lg">
+  <article>
+    <h2 id="first-section">First Section</h2>
+<p>Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero. Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec ultrices tortor pellentesque.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode nix"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">{</span> <span class="ex">mkDerivation</span>, base, bytestring, hakyll, hakyll-sass, hjsmin</a>
+<a class="sourceLine" id="cb1-2" title="2">, <span class="ex">stdenv</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">}</span>:</a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="ex">mkDerivation</span> {</a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="ex">pname</span> = <span class="st">&quot;nix-hakyll-test&quot;</span><span class="kw">;</span></a>
+<a class="sourceLine" id="cb1-6" title="6">  <span class="ex">version</span> = <span class="st">&quot;0.1.0.0&quot;</span><span class="kw">;</span></a>
+<a class="sourceLine" id="cb1-7" title="7">  <span class="ex">src</span> = ./.<span class="kw">;</span></a>
+<a class="sourceLine" id="cb1-8" title="8">  <span class="ex">isLibrary</span> = false<span class="kw">;</span></a>
+<a class="sourceLine" id="cb1-9" title="9">  <span class="ex">isExecutable</span> = true<span class="kw">;</span></a>
+<a class="sourceLine" id="cb1-10" title="10">  <span class="ex">executableHaskellDepends</span> = [</a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="ex">base</span> bytestring hakyll hakyll-sass hjsmin</a>
+<a class="sourceLine" id="cb1-12" title="12">  ];</a>
+<a class="sourceLine" id="cb1-13" title="13">  <span class="ex">license</span> = stdenv.lib.licenses.bsd3<span class="kw">;</span></a>
+<a class="sourceLine" id="cb1-14" title="14">}</a></code></pre></div>
+<h2 id="second-section">Second Section</h2>
+<p>Vivamus vel nisi ac lacus sollicitudin vulputate ac ut ligula. Nullam feugiat risus eget eros gravida in molestie sapien euismod. Nunc sed hendrerit orci. Nulla mollis consequat lorem ac blandit. Ut et turpis mauris. Nulla est odio, posuere id ullamcorper sit amet, tincidunt vel justo. Curabitur placerat tincidunt varius. Nulla vulputate, ipsum eu consectetur mollis, dui nibh aliquam neque, at ultricies leo ligula et arcu.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="va">console</span>.<span class="at">log</span>(</a>
+<a class="sourceLine" id="cb2-2" title="2">  test</a>
+<a class="sourceLine" id="cb2-3" title="3">)</a></code></pre></div>
+<p>Cabal files can be referred to using the magic URL cabal://NAME-VERSION, which will automatically download the file from Hackage. Alternatively, a direct http://host/path/pkg.cabal URL can be provided, as well as a file:///local/path/pkg.cabal URI that doesn’t depend on network access. However, if the source hash is not already in cabal2nix’s cache or provided using the –sha256 option, cabal2nix still needs to download the source code to compute the hash, which obviously still causes network traffic. Run the utility with –help to see the complete list of supported command line flags.</p>
+<p>Detailed instructions how to use those generated files with Nix can be found at https://nixos.org/nixpkgs/manual/#how-to-create-nix-builds-for-your-own-private-haskell-packages.</p>
+<p>cabal2nix can also build derivations for projects from other sources than hackage. You only need to provide an URI that points to a cabal project. The most common usecase for this is probably to generate a derivation for a project on the local file system:</p>
+  </article>
+</section>
+
+<section id="post-comment-area" class="constain-md">
+  <button id="load-comments" onclick="loadComments(this)">Load Comments
+  </button>
+</section>
+
+<script src="../scripts/loadcomments.js"></script>
+  </main> 
+  <footer class="constrain-lg">
+  <ul>
+    <li><a href="#">Site Source</a></li>
+    <li><a href="../sitemap.html">Site Map</a></li>
+    <li><a href="#">Legal</a></li>
+    
+    
+    
+  </ul>
+  <p>this is the footer</p>
+  <div class="social-links">
+    <a href="https://github.com/m0n4d1"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://codepen.io/m0n4d"><i class="fab fa-codepen"></i> CodePen</a>
+    <a href="https://twitter.com/M0n4d1"><i class="fab fa-twitter"></i> Twitter</a>
+  </div>
+</footer>
+<div class="subfooter">
+  <h6>Copyright &copy 2019 - Anthony Reynolds</h6>
+</div>
+</body>
+</html>

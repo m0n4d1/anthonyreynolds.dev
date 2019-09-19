@@ -1,0 +1,36 @@
+$custom-theme: (
+  primary: #8A99A6,
+  secondary: #485359,
+  tertiary: #333B40,
+  tint: #D2D6D9,
+  white: #F2F2F2,
+  black: #1E1E1E
+);
+
+$color-theme: $custom-theme; 
+
+@function get-color($color) {
+  @return map-get($color-theme,$color) or $color;
+}
+
+@function balance-color($color) {
+  @if lightness($color) >= 60 {
+    @return map-get($color-theme,black);
+  } @else {
+    @return map-get($color-theme,white);
+  }
+}
+
+@function brightness($color,$num) {
+  @if $num > 0 {
+    @return lighten($color,$num);
+  } @else {
+    @return darken($color,-$num);    
+  }
+}
+
+@mixin set-color($bg-color,$brightness: 0) {
+  $color: brightness($bg-color,$brightness);
+  background-color: $color;
+  color: balance-color($color);
+}

@@ -1,0 +1,38 @@
+<section id="hero" class="constrain-lg">
+  <div>
+    <h1>Hi I'm Anthony, Welcome to my blog and portfolio website.</h1>
+    <p>Here I post about all kinds of web development and tech topics, Although I have a strong affinity for Nix/NixOs and Haskell</p>
+  </div>
+</section>
+<section id="posts" class="constrain-lg">
+  <h2>Latest Posts</h2>
+  $for(posts)$
+    <article class="post-preview">
+      <div class="post-preview-heading">
+        <a href="$url$"><h3>Post Title: $title$</h3></a>
+      </div>
+      <div class="post-preview-body">
+        <div class="date-badge">
+          <span class="date-day">$day$</span>
+          <span class="date-month">$month$</span>
+        </div>
+        <div class="post-preview-description">
+          $if(description)$
+            $description$...
+          $endif$
+        </div>
+      </div>
+      <div class="post-preview-footer">
+        <div class="tags">
+          $if(tags)$
+            <i class="fas fa-tags"> </i> $tags$
+          $endif$
+        </div>
+        <div>
+          <a href="$url$" class="read-more">Read More... <i class="fas fa-sign-out-alt"></i></a>
+        </div>
+      </div>
+    </article>
+  $endfor$
+  <a href="/posts.html">View All Posts</a>
+</section>

@@ -1,0 +1,28 @@
+@import 'util/layout';
+@import 'util/normalize';
+@import 'util/syntax';
+@import 'util/typography';
+@import 'util/color';
+
+@import "components/header";
+@import "components/footer";
+
+@import "pages/home";
+@import "pages/posts";
+@import "pages/portfolio";
+@import "pages/about";
+@import "pages/post";
+@import "pages/tag";
+
+body { 
+  margin: 0; 
+  padding: 0;
+  font-family: Abel, sans-serif;
+  font-size: 1.1rem;
+  background-color: map-get($color-theme, white );
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+}

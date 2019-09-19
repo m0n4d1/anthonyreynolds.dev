@@ -1,0 +1,24 @@
+<section id="post-title-area" class="constrain-lg">
+  <h1>$title$</h1>
+  <div class="info">
+    <span><i class="far fa-clock"></i> $date$</span>
+    <div>
+      $if(tags)$
+        <i class="fas fa-tags"> </i> $tags$
+      $endif$
+    </div> 
+  </div>
+</section>
+
+<section id="post-main" class="constrain-lg">
+  <article>
+    $body$
+  </article>
+</section>
+
+<section id="post-comment-area" class="constain-md">
+  <button id="load-comments" onclick="loadComments(this)">Load Comments
+  </button>
+</section>
+
+<script src="/scripts/loadcomments.js"></script>

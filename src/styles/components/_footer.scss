@@ -1,0 +1,35 @@
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  $color: get-color(tint);
+  text-align: center;
+  @include set-color($color);
+  .social-links {
+    display: grid;
+    grid-gap: .2em;
+    a {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      padding: .8em;
+      font-size: 1.1em;
+      @include set-color(map-get($color-theme, primary));
+      transition: all .2s ease;
+      &:hover {
+        @include set-color(get-color(secondary));
+        box-shadow: 0 2px 2px rgba(map-get($color-theme, tertiary ),0.2);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+.subfooter {
+  $color: get-color(tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include set-color($color);
+}

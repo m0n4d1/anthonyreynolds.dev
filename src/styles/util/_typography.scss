@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Aldrich, sans-serif;
+  font-weight: 100;
+}
+
+p {
+  font-family: Abel, 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+a {
+  font-family: Abel, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+} 
+
+nav *, code, code * {
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+}
+
+ code * {
+  font-size: .9rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+
+h6 {
+  font-size: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#site-heading {
+  font-family: Comfortaa, sans-serif;
+  //font-size: 4rem;
+  font-size: calc(20vw * .25);
+  color: inherit;
+  margin: 1em;
+}

@@ -21,7 +21,7 @@ $color-theme: $custom-theme;
   }
 }
 
-@function brightness($color,$num) {
+@function brightness_($color,$num) {
   @if $num > 0 {
     @return lighten($color,$num);
   } @else {
@@ -30,7 +30,7 @@ $color-theme: $custom-theme;
 }
 
 @mixin set-color($bg-color,$brightness: 0) {
-  $color: brightness($bg-color,$brightness);
+  $color: brightness_($bg-color,$brightness);
   background-color: $color;
   color: balance-color($color);
 }

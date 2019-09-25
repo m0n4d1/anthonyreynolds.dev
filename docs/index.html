@@ -23,7 +23,7 @@
     <a href="./about.html"><i class="fas fa-info-circle"></i> About</a>
   </div>
   <div class="nav-right hide-sm">
-    <a href="#"><i class="fas fa-code"></i> Source Code</a>
+    <a href="https://github.com/m0n4d1/anthonyreynolds.dev"><i class="fas fa-code"></i> Source Code</a>
   </div>
 </nav>
   <main>
@@ -32,6 +32,12 @@
     <h1>Hi I'm Anthony, Welcome to my blog and portfolio website.</h1>
     <p>Here I post about all kinds of web development and tech topics, Although I have a strong affinity for Nix/NixOs and Haskell</p>
   </div>
+</section>
+<section id="latest-social" class="constrain-lg">
+
+</section>
+<section id="view-all-posts" class="constrain-lg">
+  <h2>Something I guess?</h2>
 </section>
 <section id="posts" class="constrain-lg">
   <h2>Latest Posts</h2>
@@ -63,7 +69,38 @@
       </div>
     </article>
   
-  <a href="./posts.html">View All Posts</a>
+    <article class="post-preview">
+      <div class="post-preview-heading">
+        <a href="./posts/2019-09-17-test%20copy.html"><h3>Post Title: example post 2</h3></a>
+      </div>
+      <div class="post-preview-body">
+        <div class="date-badge">
+          <span class="date-day">17</span>
+          <span class="date-month">Sep</span>
+        </div>
+        <div class="post-preview-description">
+          
+            Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero. Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec ultrices tortor pellentesque....
+          
+        </div>
+      </div>
+      <div class="post-preview-footer">
+        <div class="tags">
+          
+            <i class="fas fa-tags"> </i> <a href="./tags/testing.html">testing</a>, <a href="./tags/nix.html">nix</a>
+          
+        </div>
+        <div>
+          <a href="./posts/2019-09-17-test%20copy.html" class="read-more">Read More... <i class="fas fa-sign-out-alt"></i></a>
+        </div>
+      </div>
+    </article>
+  
+  <div id="super-test">
+    <a class="button-big" href="./posts.html">View All Posts... <i class="fas fa-sign-out-alt"></i></a>
+  </div>
+</section>
+<section class="constrain-lg">
 </section>
   </main> 
   <footer class="constrain-lg">
@@ -75,7 +112,10 @@
     
     
   </ul>
-  <p>this is the footer</p>
+  <div>
+    <h4>About My Site</h4>
+    <p>This is a static website written in Haskell using the static site generator library Hakyll. I've created my own style, theme and layout system in sass. This website project is managed with Nix and deployed to githubpages</p>
+  </div>
   <div class="social-links">
     <a href="https://github.com/m0n4d1"><i class="fab fa-github"></i> GitHub</a>
     <a href="https://codepen.io/m0n4d"><i class="fab fa-codepen"></i> CodePen</a>

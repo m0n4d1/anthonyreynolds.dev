@@ -7,6 +7,22 @@ $custom-theme: (
   black: #1E1E1E
 );
 
+$alt-theme: (
+  primary: #737373,
+  secondary: #262626,
+  tertiary: #0D0D0D,
+  tint: #BFBFBF,
+  white: #F2F2F2,
+  black: #000
+);
+$alt2-theme: (
+  primary: #F28627,
+  secondary: #BF5934,
+  tertiary: #73392C,
+  tint: #BF895A,
+  white: #fff,
+  black: #011826
+);
 $color-theme: $custom-theme; 
 
 @function get-color($color) {

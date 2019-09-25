@@ -1,8 +1,20 @@
 <section class="constrain-lg">
   <h1>Posts</h1>
-  <ul>
+  <ol class="post-list" reversed>
     $for(posts)$
-      <li><i class="far fa-clock"></i> $date$ -<a href="$url$"> $title$</a></li>
+      <li>
+        <div>
+          <span class="post-title">
+            <a href="$url$">$title$</a>
+          </span>
+          <span class="date">
+            <i class="far fa-clock"></i> $date$
+          </span>
+          <span class="tags">
+            <i class="fas fa-tags"> </i> $tags$
+          </span>
+        </div>
+      </li>
     $endfor$
   </ul>
 </section>

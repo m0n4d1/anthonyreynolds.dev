@@ -1,0 +1,33 @@
+.post-list {
+  li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: .5rem;
+    div {
+      display: flex;
+      box-shadow: 0 2px 2px rgba(get-color(tertiary),0.4);
+      border: 1px solid get-color(secondary);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    span {
+      //display: inline-block;
+      padding: .2em .5em;
+    }
+    .date {
+      @include set-color(get-color(secondary));
+    }
+    .post-title {
+      @include set-color(get-color(tint));
+    }
+    .tags {
+  
+      @include set-color(lighten(map-get($color-theme, primary),10%));
+      color: map-get($color-theme, secondary);
+    }
+    a {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+}

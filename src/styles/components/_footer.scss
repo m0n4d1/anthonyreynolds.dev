@@ -3,7 +3,7 @@ footer{
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  min-height: 250px;
   $color: get-color(tint);
   text-align: center;
   @include set-color($color);

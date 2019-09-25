@@ -9,6 +9,9 @@ $breakpoints: (
     .hide-#{$breakpoint} {
       display: none !important;
     }
+    .collapse-grid-#{$breakpoint} {
+      grid-template-columns: 1fr;
+    }
     @if $breakpoint == sm {
       p {
         text-align: justify;

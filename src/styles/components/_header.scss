@@ -1,5 +1,5 @@
 header#site-header {
-  $color: get-color(secondary);
+  $color: get-color(primary);
   display: flex;
   position: relative;
   justify-content: center;
@@ -43,6 +43,7 @@ header#site-header {
     padding: 1rem;
     transition: background-color .1s ease;
     color: get-color(tint);
+    text-shadow: 0 1px 1px get-color(tertiary);
     &:hover {
       background-color: get-color(primary);
       color: get-color(white);

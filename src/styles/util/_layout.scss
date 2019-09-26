@@ -10,7 +10,7 @@ $breakpoints: (
       display: none !important;
     }
     .collapse-grid-#{$breakpoint} {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;
     }
     @if $breakpoint == sm {
       p {

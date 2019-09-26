@@ -48,7 +48,7 @@ main = hakyllWith config $ do
     create ["index.html"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
+            posts <- fmap (take 10) . recentFirst =<< loadAll "posts/*"
             let pageCtx =
                     listField "posts" (postCtxWithTags tags) (return posts) <>
                     constField "title" "Home"                               <>

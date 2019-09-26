@@ -16,6 +16,7 @@ header#site-header {
 
 .topnav {
   text-align: center;
+  min-height: 52px;
   $color: get-color(secondary);
   display: flex;    
   justify-content: space-between;
@@ -24,6 +25,10 @@ header#site-header {
   z-index: 100;
   @include set-color($color);
   box-shadow: 0 2px 2px rgba( get-color(tertiary),0.2);
+  transition: box-shadow  .1s ease;
+  &:hover {
+    box-shadow: none;
+  }
   > div {
     display: flex;
     align-items: center;

@@ -3,6 +3,15 @@ $custom-theme: (
   secondary: #485359,
   tertiary: #333B40,
   tint: #D2D6D9,
+  highlight: #FF3D2E,
+  white: #F2F2F2,
+  black: #1E1E1E
+);
+$custom2-theme: (
+  primary: #FF3D2E,
+  secondary: #485359,
+  tertiary: #333B40,
+  tint: #D2D6D9,
   white: #F2F2F2,
   black: #1E1E1E
 );
@@ -49,4 +58,10 @@ $color-theme: $custom-theme;
   $color: brightness_($bg-color,$brightness);
   background-color: $color;
   color: balance-color($color);
+}
+
+@each $color, $val in $color-theme {
+  .color-bg-#{$color} {
+    @include set-color($val);
+  }
 }

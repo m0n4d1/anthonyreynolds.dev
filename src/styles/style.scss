@@ -26,4 +26,10 @@ body {
 main {
   display: grid;
   min-height: 100vh;
+  box-sizing: border-box;
+}
+
+//ad-hoc
+h1 {
+  text-shadow: 0 2px 2px rgba(map-get($color-theme, tertiary ),0.4);
 }

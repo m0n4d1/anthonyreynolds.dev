@@ -1,12 +1,15 @@
 #post-title-area {
   @include set-color(get-color(tertiary));
+  box-sizing: border-box;
   h1 {
     margin-bottom: 0;
+    box-sizing: border-box;
   }
   .info {
     padding: 1rem;
     display: grid;
     grid-gap: .5em;
+    box-sizing: border-box;
     a {
       padding-left: .2em;
       color: inherit;
@@ -25,7 +28,7 @@
       box-shadow: 0 2px 2px rgba(map-get($color-theme, tertiary ),0.2);
   
       background-color: lighten(map-get($color-theme, tint ), 10%);
-      max-width: calc(100vw - 2rem );
+      max-width: calc(100vw - 3rem );
       border: 1px solid map-get($color-theme, tint);
       border-radius: 2px;
     }
